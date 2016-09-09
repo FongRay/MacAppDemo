@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		231A54FD1D7E7501009E10FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 231A54FC1D7E7501009E10FB /* AppDelegate.m */; };
+		231A55001D7E7501009E10FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 231A54FF1D7E7501009E10FB /* main.m */; };
+		231A55021D7E7501009E10FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231A55011D7E7501009E10FB /* Assets.xcassets */; };
+		231A55051D7E7501009E10FB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 231A55031D7E7501009E10FB /* MainMenu.xib */; };
+		232B11181D829176001901CB /* BBUserInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 232B11171D829176001901CB /* BBUserInfoView.m */; };
+		232B111B1D829190001901CB /* BBUserInfoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 232B111A1D829190001901CB /* BBUserInfoVC.m */; };
+		232B11201D82AAAB001901CB /* BBRoundImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 232B111F1D82AAAB001901CB /* BBRoundImageButton.m */; };
+		232B11221D82B407001901CB /* user_photo_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 232B11211D82B407001901CB /* user_photo_default.png */; };
+		23557DB71D7FF624000689B0 /* BBTitleBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DB61D7FF624000689B0 /* BBTitleBarView.m */; };
+		23557DBF1D80015B000689B0 /* NSColor+RGBValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DBE1D80015B000689B0 /* NSColor+RGBValue.m */; };
+		23557DC21D8017B4000689B0 /* BBNavigateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC11D8017B4000689B0 /* BBNavigateView.m */; };
+		23557DCB1D801BF8000689B0 /* MainWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC51D801BF8000689B0 /* MainWindow.m */; };
+		23557DCC1D801BF8000689B0 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23557DC61D801BF8000689B0 /* MainWindow.xib */; };
+		23557DCD1D801BF8000689B0 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DC81D801BF8000689B0 /* MainWindowController.m */; };
+		23557DCE1D801BF8000689B0 /* MainWindowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DCA1D801BF8000689B0 /* MainWindowView.m */; };
+		23557DD21D801C2C000689B0 /* BBContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DD11D801C2C000689B0 /* BBContentView.m */; };
+		23557DD71D80231E000689B0 /* app_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DD61D80231E000689B0 /* app_icon.png */; };
+		23557DD91D80240A000689B0 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DD81D80240A000689B0 /* logo.png */; };
+		23557DDC1D802EF9000689B0 /* icon_close_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DDA1D802EF9000689B0 /* icon_close_s.png */; };
+		23557DDD1D802EF9000689B0 /* icon_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DDB1D802EF9000689B0 /* icon_close.png */; };
+		23557DE01D81178A000689B0 /* BBImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DDF1D81178A000689B0 /* BBImageButton.m */; };
+		23557DE41D813866000689B0 /* icon_minimize_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DE21D813866000689B0 /* icon_minimize_s.png */; };
+		23557DE51D813866000689B0 /* icon_minimize.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DE31D813866000689B0 /* icon_minimize.png */; };
+		23557DE81D813FE0000689B0 /* icon_setting_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DE61D813FE0000689B0 /* icon_setting_s.png */; };
+		23557DE91D813FE0000689B0 /* icon_setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DE71D813FE0000689B0 /* icon_setting.png */; };
+		23557DEC1D81482D000689B0 /* BBTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DEB1D81482D000689B0 /* BBTextButton.m */; };
+		23557DEF1D815D5F000689B0 /* icon_notice_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DED1D815D5F000689B0 /* icon_notice_s.png */; };
+		23557DF01D815D5F000689B0 /* icon_notice.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DEE1D815D5F000689B0 /* icon_notice.png */; };
+		23557DF31D816079000689B0 /* BBNoticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DF21D816079000689B0 /* BBNoticeVC.m */; };
+		23557DF61D816098000689B0 /* BBNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DF51D816098000689B0 /* BBNoticeView.m */; };
+		23557DF91D8266B0000689B0 /* BBFitSizeTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 23557DF81D8266B0000689B0 /* BBFitSizeTextButton.m */; };
+		23557DFC1D826F0D000689B0 /* icon_more_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DFA1D826F0D000689B0 /* icon_more_s.png */; };
+		23557DFD1D826F0D000689B0 /* icon_more.png in Resources */ = {isa = PBXBuildFile; fileRef = 23557DFB1D826F0D000689B0 /* icon_more.png */; };
+		23F98B5A1D7EBD8C008E807F /* BBTitleBarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F98B591D7EBD8C008E807F /* BBTitleBarVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		231A54F81D7E7501009E10FB /* ugc_assist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ugc_assist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		231A54FB1D7E7501009E10FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		231A54FC1D7E7501009E10FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		231A54FF1D7E7501009E10FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		231A55011D7E7501009E10FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		231A55041D7E7501009E10FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		231A55061D7E7501009E10FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		232B11161D829176001901CB /* BBUserInfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBUserInfoView.h; path = UI/TitleBar/BBUserInfoView.h; sourceTree = "<group>"; };
+		232B11171D829176001901CB /* BBUserInfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBUserInfoView.m; path = UI/TitleBar/BBUserInfoView.m; sourceTree = "<group>"; };
+		232B11191D829190001901CB /* BBUserInfoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBUserInfoVC.h; path = UI/TitleBar/BBUserInfoVC.h; sourceTree = "<group>"; };
+		232B111A1D829190001901CB /* BBUserInfoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBUserInfoVC.m; path = UI/TitleBar/BBUserInfoVC.m; sourceTree = "<group>"; };
+		232B111E1D82AAAB001901CB /* BBRoundImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBRoundImageButton.h; path = Common/Controls/BBRoundImageButton.h; sourceTree = "<group>"; };
+		232B111F1D82AAAB001901CB /* BBRoundImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBRoundImageButton.m; path = Common/Controls/BBRoundImageButton.m; sourceTree = "<group>"; };
+		232B11211D82B407001901CB /* user_photo_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user_photo_default.png; path = Resources/user_photo_default.png; sourceTree = "<group>"; };
+		23557DB51D7FF624000689B0 /* BBTitleBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBTitleBarView.h; path = UI/TitleBar/BBTitleBarView.h; sourceTree = "<group>"; };
+		23557DB61D7FF624000689B0 /* BBTitleBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBTitleBarView.m; path = UI/TitleBar/BBTitleBarView.m; sourceTree = "<group>"; };
+		23557DBD1D80015B000689B0 /* NSColor+RGBValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSColor+RGBValue.h"; path = "Common/Categories/NSColor+RGBValue.h"; sourceTree = "<group>"; };
+		23557DBE1D80015B000689B0 /* NSColor+RGBValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSColor+RGBValue.m"; path = "Common/Categories/NSColor+RGBValue.m"; sourceTree = "<group>"; };
+		23557DC01D8017B4000689B0 /* BBNavigateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBNavigateView.h; path = UI/Navigate/BBNavigateView.h; sourceTree = "<group>"; };
+		23557DC11D8017B4000689B0 /* BBNavigateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBNavigateView.m; path = UI/Navigate/BBNavigateView.m; sourceTree = "<group>"; };
+		23557DC41D801BF8000689B0 /* MainWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainWindow.h; path = UI/MainWindow/MainWindow.h; sourceTree = "<group>"; };
+		23557DC51D801BF8000689B0 /* MainWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainWindow.m; path = UI/MainWindow/MainWindow.m; sourceTree = "<group>"; };
+		23557DC61D801BF8000689B0 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = UI/MainWindow/MainWindow.xib; sourceTree = "<group>"; };
+		23557DC71D801BF8000689B0 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainWindowController.h; path = UI/MainWindow/MainWindowController.h; sourceTree = "<group>"; };
+		23557DC81D801BF8000689B0 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainWindowController.m; path = UI/MainWindow/MainWindowController.m; sourceTree = "<group>"; };
+		23557DC91D801BF8000689B0 /* MainWindowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainWindowView.h; path = UI/MainWindow/MainWindowView.h; sourceTree = "<group>"; };
+		23557DCA1D801BF8000689B0 /* MainWindowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainWindowView.m; path = UI/MainWindow/MainWindowView.m; sourceTree = "<group>"; };
+		23557DD01D801C2C000689B0 /* BBContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBContentView.h; path = UI/ContentView/BBContentView.h; sourceTree = "<group>"; };
+		23557DD11D801C2C000689B0 /* BBContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBContentView.m; path = UI/ContentView/BBContentView.m; sourceTree = "<group>"; };
+		23557DD61D80231E000689B0 /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = app_icon.png; path = Resources/app_icon.png; sourceTree = "<group>"; };
+		23557DD81D80240A000689B0 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = Resources/logo.png; sourceTree = "<group>"; };
+		23557DDA1D802EF9000689B0 /* icon_close_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_close_s.png; path = Resources/icon_close_s.png; sourceTree = "<group>"; };
+		23557DDB1D802EF9000689B0 /* icon_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_close.png; path = Resources/icon_close.png; sourceTree = "<group>"; };
+		23557DDE1D81178A000689B0 /* BBImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBImageButton.h; path = Common/Controls/BBImageButton.h; sourceTree = "<group>"; };
+		23557DDF1D81178A000689B0 /* BBImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBImageButton.m; path = Common/Controls/BBImageButton.m; sourceTree = "<group>"; };
+		23557DE21D813866000689B0 /* icon_minimize_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_minimize_s.png; path = Resources/icon_minimize_s.png; sourceTree = "<group>"; };
+		23557DE31D813866000689B0 /* icon_minimize.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_minimize.png; path = Resources/icon_minimize.png; sourceTree = "<group>"; };
+		23557DE61D813FE0000689B0 /* icon_setting_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_setting_s.png; path = Resources/icon_setting_s.png; sourceTree = "<group>"; };
+		23557DE71D813FE0000689B0 /* icon_setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_setting.png; path = Resources/icon_setting.png; sourceTree = "<group>"; };
+		23557DEA1D81482D000689B0 /* BBTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBTextButton.h; path = Common/Controls/BBTextButton.h; sourceTree = "<group>"; };
+		23557DEB1D81482D000689B0 /* BBTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBTextButton.m; path = Common/Controls/BBTextButton.m; sourceTree = "<group>"; };
+		23557DED1D815D5F000689B0 /* icon_notice_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_notice_s.png; path = Resources/icon_notice_s.png; sourceTree = "<group>"; };
+		23557DEE1D815D5F000689B0 /* icon_notice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_notice.png; path = Resources/icon_notice.png; sourceTree = "<group>"; };
+		23557DF11D816079000689B0 /* BBNoticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBNoticeVC.h; path = UI/TitleBar/BBNoticeVC.h; sourceTree = "<group>"; };
+		23557DF21D816079000689B0 /* BBNoticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBNoticeVC.m; path = UI/TitleBar/BBNoticeVC.m; sourceTree = "<group>"; };
+		23557DF41D816098000689B0 /* BBNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBNoticeView.h; path = UI/TitleBar/BBNoticeView.h; sourceTree = "<group>"; };
+		23557DF51D816098000689B0 /* BBNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBNoticeView.m; path = UI/TitleBar/BBNoticeView.m; sourceTree = "<group>"; };
+		23557DF71D8266B0000689B0 /* BBFitSizeTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBFitSizeTextButton.h; path = Common/Controls/BBFitSizeTextButton.h; sourceTree = "<group>"; };
+		23557DF81D8266B0000689B0 /* BBFitSizeTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBFitSizeTextButton.m; path = Common/Controls/BBFitSizeTextButton.m; sourceTree = "<group>"; };
+		23557DFA1D826F0D000689B0 /* icon_more_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_more_s.png; path = Resources/icon_more_s.png; sourceTree = "<group>"; };
+		23557DFB1D826F0D000689B0 /* icon_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_more.png; path = Resources/icon_more.png; sourceTree = "<group>"; };
+		23F98B581D7EBD8C008E807F /* BBTitleBarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBTitleBarVC.h; path = UI/TitleBar/BBTitleBarVC.h; sourceTree = "<group>"; };
+		23F98B591D7EBD8C008E807F /* BBTitleBarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBTitleBarVC.m; path = UI/TitleBar/BBTitleBarVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		231A54F51D7E7501009E10FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		231A54EF1D7E7501009E10FB = {
+			isa = PBXGroup;
+			children = (
+				231A54FA1D7E7501009E10FB /* ugc_assist */,
+				231A54F91D7E7501009E10FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		231A54F91D7E7501009E10FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				231A54F81D7E7501009E10FB /* ugc_assist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		231A54FA1D7E7501009E10FB /* ugc_assist */ = {
+			isa = PBXGroup;
+			children = (
+				231A54FB1D7E7501009E10FB /* AppDelegate.h */,
+				231A54FC1D7E7501009E10FB /* AppDelegate.m */,
+				231A55011D7E7501009E10FB /* Assets.xcassets */,
+				231A55061D7E7501009E10FB /* Info.plist */,
+				231A55031D7E7501009E10FB /* MainMenu.xib */,
+				23557DC61D801BF8000689B0 /* MainWindow.xib */,
+				23557DD31D801F4E000689B0 /* Resources */,
+				231A54FE1D7E7501009E10FB /* Supporting Files */,
+				23F98B4A1D7E7CFB008E807F /* UI */,
+			);
+			path = ugc_assist;
+			sourceTree = "<group>";
+		};
+		231A54FE1D7E7501009E10FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				231A54FF1D7E7501009E10FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		23557DB81D7FFAE2000689B0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				23557DB91D7FFAEA000689B0 /* Categories */,
+				23557DE11D811790000689B0 /* Controls */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		23557DB91D7FFAEA000689B0 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				23557DBD1D80015B000689B0 /* NSColor+RGBValue.h */,
+				23557DBE1D80015B000689B0 /* NSColor+RGBValue.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		23557DC31D8017BB000689B0 /* Navigate */ = {
+			isa = PBXGroup;
+			children = (
+				23557DC01D8017B4000689B0 /* BBNavigateView.h */,
+				23557DC11D8017B4000689B0 /* BBNavigateView.m */,
+			);
+			name = Navigate;
+			sourceTree = "<group>";
+		};
+		23557DCF1D801C0F000689B0 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				23557DD01D801C2C000689B0 /* BBContentView.h */,
+				23557DD11D801C2C000689B0 /* BBContentView.m */,
+			);
+			name = ContentView;
+			sourceTree = "<group>";
+		};
+		23557DD31D801F4E000689B0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				232B11211D82B407001901CB /* user_photo_default.png */,
+				23557DFA1D826F0D000689B0 /* icon_more_s.png */,
+				23557DFB1D826F0D000689B0 /* icon_more.png */,
+				23557DED1D815D5F000689B0 /* icon_notice_s.png */,
+				23557DEE1D815D5F000689B0 /* icon_notice.png */,
+				23557DE61D813FE0000689B0 /* icon_setting_s.png */,
+				23557DE71D813FE0000689B0 /* icon_setting.png */,
+				23557DE21D813866000689B0 /* icon_minimize_s.png */,
+				23557DE31D813866000689B0 /* icon_minimize.png */,
+				23557DDA1D802EF9000689B0 /* icon_close_s.png */,
+				23557DDB1D802EF9000689B0 /* icon_close.png */,
+				23557DD81D80240A000689B0 /* logo.png */,
+				23557DD61D80231E000689B0 /* app_icon.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		23557DE11D811790000689B0 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				23557DDE1D81178A000689B0 /* BBImageButton.h */,
+				23557DDF1D81178A000689B0 /* BBImageButton.m */,
+				23557DEA1D81482D000689B0 /* BBTextButton.h */,
+				23557DEB1D81482D000689B0 /* BBTextButton.m */,
+				23557DF71D8266B0000689B0 /* BBFitSizeTextButton.h */,
+				23557DF81D8266B0000689B0 /* BBFitSizeTextButton.m */,
+				232B111E1D82AAAB001901CB /* BBRoundImageButton.h */,
+				232B111F1D82AAAB001901CB /* BBRoundImageButton.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		23F98B4A1D7E7CFB008E807F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				23557DB81D7FFAE2000689B0 /* Common */,
+				23557DCF1D801C0F000689B0 /* ContentView */,
+				23F98B571D7E907E008E807F /* MainWindow */,
+				23557DC31D8017BB000689B0 /* Navigate */,
+				23F98B4B1D7E7D33008E807F /* TitleBar */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		23F98B4B1D7E7D33008E807F /* TitleBar */ = {
+			isa = PBXGroup;
+			children = (
+				23557DF11D816079000689B0 /* BBNoticeVC.h */,
+				23557DF21D816079000689B0 /* BBNoticeVC.m */,
+				23557DF41D816098000689B0 /* BBNoticeView.h */,
+				23557DF51D816098000689B0 /* BBNoticeView.m */,
+				23F98B581D7EBD8C008E807F /* BBTitleBarVC.h */,
+				23F98B591D7EBD8C008E807F /* BBTitleBarVC.m */,
+				23557DB51D7FF624000689B0 /* BBTitleBarView.h */,
+				23557DB61D7FF624000689B0 /* BBTitleBarView.m */,
+				232B11191D829190001901CB /* BBUserInfoVC.h */,
+				232B111A1D829190001901CB /* BBUserInfoVC.m */,
+				232B11161D829176001901CB /* BBUserInfoView.h */,
+				232B11171D829176001901CB /* BBUserInfoView.m */,
+			);
+			name = TitleBar;
+			sourceTree = "<group>";
+		};
+		23F98B571D7E907E008E807F /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				23557DC41D801BF8000689B0 /* MainWindow.h */,
+				23557DC51D801BF8000689B0 /* MainWindow.m */,
+				23557DC71D801BF8000689B0 /* MainWindowController.h */,
+				23557DC81D801BF8000689B0 /* MainWindowController.m */,
+				23557DC91D801BF8000689B0 /* MainWindowView.h */,
+				23557DCA1D801BF8000689B0 /* MainWindowView.m */,
+			);
+			name = MainWindow;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		231A54F71D7E7501009E10FB /* ugc_assist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 231A55091D7E7501009E10FB /* Build configuration list for PBXNativeTarget "ugc_assist" */;
+			buildPhases = (
+				231A54F41D7E7501009E10FB /* Sources */,
+				231A54F51D7E7501009E10FB /* Frameworks */,
+				231A54F61D7E7501009E10FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ugc_assist;
+			productName = ugc_assist;
+			productReference = 231A54F81D7E7501009E10FB /* ugc_assist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		231A54F01D7E7501009E10FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BB;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = bilibili;
+				TargetAttributes = {
+					231A54F71D7E7501009E10FB = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 231A54F31D7E7501009E10FB /* Build configuration list for PBXProject "ugc_assist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 231A54EF1D7E7501009E10FB;
+			productRefGroup = 231A54F91D7E7501009E10FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				231A54F71D7E7501009E10FB /* ugc_assist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		231A54F61D7E7501009E10FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23557DD71D80231E000689B0 /* app_icon.png in Resources */,
+				23557DE51D813866000689B0 /* icon_minimize.png in Resources */,
+				23557DE91D813FE0000689B0 /* icon_setting.png in Resources */,
+				23557DD91D80240A000689B0 /* logo.png in Resources */,
+				23557DEF1D815D5F000689B0 /* icon_notice_s.png in Resources */,
+				232B11221D82B407001901CB /* user_photo_default.png in Resources */,
+				23557DE81D813FE0000689B0 /* icon_setting_s.png in Resources */,
+				23557DF01D815D5F000689B0 /* icon_notice.png in Resources */,
+				23557DFC1D826F0D000689B0 /* icon_more_s.png in Resources */,
+				23557DE41D813866000689B0 /* icon_minimize_s.png in Resources */,
+				23557DFD1D826F0D000689B0 /* icon_more.png in Resources */,
+				231A55021D7E7501009E10FB /* Assets.xcassets in Resources */,
+				23557DDC1D802EF9000689B0 /* icon_close_s.png in Resources */,
+				231A55051D7E7501009E10FB /* MainMenu.xib in Resources */,
+				23557DCC1D801BF8000689B0 /* MainWindow.xib in Resources */,
+				23557DDD1D802EF9000689B0 /* icon_close.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		231A54F41D7E7501009E10FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23557DBF1D80015B000689B0 /* NSColor+RGBValue.m in Sources */,
+				23557DCE1D801BF8000689B0 /* MainWindowView.m in Sources */,
+				232B11201D82AAAB001901CB /* BBRoundImageButton.m in Sources */,
+				23557DF31D816079000689B0 /* BBNoticeVC.m in Sources */,
+				23557DC21D8017B4000689B0 /* BBNavigateView.m in Sources */,
+				23557DE01D81178A000689B0 /* BBImageButton.m in Sources */,
+				232B11181D829176001901CB /* BBUserInfoView.m in Sources */,
+				23557DCD1D801BF8000689B0 /* MainWindowController.m in Sources */,
+				23557DF61D816098000689B0 /* BBNoticeView.m in Sources */,
+				23F98B5A1D7EBD8C008E807F /* BBTitleBarVC.m in Sources */,
+				232B111B1D829190001901CB /* BBUserInfoVC.m in Sources */,
+				23557DEC1D81482D000689B0 /* BBTextButton.m in Sources */,
+				23557DB71D7FF624000689B0 /* BBTitleBarView.m in Sources */,
+				23557DCB1D801BF8000689B0 /* MainWindow.m in Sources */,
+				231A55001D7E7501009E10FB /* main.m in Sources */,
+				23557DD21D801C2C000689B0 /* BBContentView.m in Sources */,
+				231A54FD1D7E7501009E10FB /* AppDelegate.m in Sources */,
+				23557DF91D8266B0000689B0 /* BBFitSizeTextButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		231A55031D7E7501009E10FB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				231A55041D7E7501009E10FB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		231A55071D7E7501009E10FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		231A55081D7E7501009E10FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		231A550A1D7E7501009E10FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ugc_assist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bilibili.ugc-assist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		231A550B1D7E7501009E10FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ugc_assist/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "bilibili.ugc-assist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		231A54F31D7E7501009E10FB /* Build configuration list for PBXProject "ugc_assist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231A55071D7E7501009E10FB /* Debug */,
+				231A55081D7E7501009E10FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		231A55091D7E7501009E10FB /* Build configuration list for PBXNativeTarget "ugc_assist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231A550A1D7E7501009E10FB /* Debug */,
+				231A550B1D7E7501009E10FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 231A54F01D7E7501009E10FB /* Project object */;
+}
