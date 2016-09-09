@@ -1,4 +1,4 @@
 ## Work Demo
- * ###No commercial use
- * ###Just a practice demo
+ * No commercial use
+ * Just a practice demo
 
