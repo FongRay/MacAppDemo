@@ -88,8 +88,7 @@
 }
 
 - (void)minBtnClicked:(id)sender {
-    //[self.view.window miniaturize:self];
-    [_userInfoVC test];
+    [self.view.window miniaturize:self];
 }
 
 - (void)settingBtnClicked:(id)sender {

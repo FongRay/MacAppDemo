@@ -1,14 +1,37 @@
 //
-//  BBTextButton.m
+//  BBImageButton.m
 //  ugc_assist
 //
 //  Created by Ray Fong on 16/9/8.
 //  Copyright © 2016年 bilibili. All rights reserved.
 //
 
-#import "BBTextButton.h"
+#import "BBImageButton.h"
 
-@interface BBTextButton ()
+@interface BBButtonCell : NSButtonCell
+
+- (NSRect)drawTitle:(NSAttributedString *)title withFrame:(NSRect)frame inView:(NSView *)controlView;
+
+@end
+
+@implementation BBButtonCell
+
+- (NSRect)drawTitle:(NSAttributedString *)title withFrame:(NSRect)frame inView:(NSView *)controlView {
+    if (![self isEnabled]) {
+        return [super drawTitle:[self attributedTitle] withFrame:frame inView:controlView];
+    }
+    return [super drawTitle:title withFrame:frame inView:controlView];
+}
+
+@end
+
+@interface BBImageButton ()
+
+@property (nonatomic, strong) NSImage *normalImage;
+
+@property (nonatomic, strong) NSImage *hoverImage;
+
+@property (nonatomic, strong) NSImage *disabledImage;
 
 @property (nonatomic, strong) NSColor *normalColor;
 
@@ -20,7 +43,8 @@
 
 @end
 
-@implementation BBTextButton
+@implementation BBImageButton
+
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -30,10 +54,12 @@
 
 - (instancetype)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];
+    BBButtonCell *cell = [[BBButtonCell alloc] init];
+    [self setCell:cell];
     [self setButtonType:NSMomentaryChangeButton];
-    [self setAlignment:NSTextAlignmentLeft];
+    [self setBezelStyle:NSRoundedDisclosureBezelStyle];
     [self setBordered:NO];
-    [self setImage:nil];
+    [[self cell] setImageDimsWhenDisabled:NO];
     return self;
 }
 
@@ -55,7 +81,12 @@
 }
 
 - (void)setMouseEntered {
-    [self setTextColor:_hoverColor];
+    if ([self isEnabled]) {
+        self.image = _hoverImage;
+        if (_hoverColor != nil) {
+            [self setTextColor:_hoverColor];
+        }
+    }
 }
 
 - (void)mouseExited:(NSEvent *)theEvent {
@@ -64,7 +95,26 @@
 }
 
 - (void)setMouseExited {
-    [self setTextColor:_normalColor];
+    if ([self isEnabled]) {
+        self.image = _normalImage;
+        if (_normalColor != nil) {
+            [self setTextColor:_normalColor];
+        }
+    }
+}
+
+- (void)setImage:(NSString *)normal withHover:(NSString *)hover {
+    _normalImage = [NSImage imageNamed:normal];
+    _hoverImage = [NSImage imageNamed:hover];
+    self.image = _normalImage;
+    self.alternateImage = _hoverImage;
+}
+
+- (void)setImage:(NSString *)normal
+       withHover:(NSString *)hover
+    withDisabled:(NSString *)disabled {
+    [self setImage:normal withHover:hover];
+    _disabledImage = [NSImage imageNamed:disabled];
 }
 
 - (void)setTitle:(NSString *)title
@@ -81,6 +131,13 @@
     NSRange titleRange = NSMakeRange(0, [self.title length]);
     [textAttr addAttribute:NSForegroundColorAttributeName value:color range:titleRange];
     [self setAttributedTitle:textAttr];
+}
+
+- (void)setEnabled:(BOOL)enabled {
+    [super setEnabled:enabled];
+    if (!enabled) {
+        self.image = _disabledImage;
+    }
 }
 
 @end

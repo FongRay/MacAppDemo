@@ -19,7 +19,7 @@
             <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1080"/>
             <view key="contentView" id="EiT-Mj-1SZ" customClass="MainWindowView">
                 <rect key="frame" x="0.0" y="0.0" width="1020" height="701"/>
-                <autoresizingMask key="autoresizingMask"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIN-pD-Qrh" customClass="BBTitleBarView">
                         <rect key="frame" x="0.0" y="641" width="1020" height="60"/>
@@ -28,14 +28,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="170" height="641"/>
                     </customView>
                     <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RiF-IL-e4v" customClass="BBContentView">
-                        <rect key="frame" x="170" y="0.0" width="850" height="640"/>
+                        <rect key="frame" x="170" y="1" width="850" height="640"/>
                     </customView>
                 </subviews>
             </view>
+            <point key="canvasLocation" x="375" y="443.5"/>
         </window>
         <viewController id="QgU-lW-5CT" customClass="BBTitleBarVC">
             <connections>
                 <outlet property="view" destination="DIN-pD-Qrh" id="RcZ-b1-ckO"/>
+            </connections>
+        </viewController>
+        <viewController id="vyH-Ip-Fgi" customClass="BBNavigateVC">
+            <connections>
+                <outlet property="view" destination="v2n-7g-Mdb" id="pZw-y9-Tdw"/>
+            </connections>
+        </viewController>
+        <viewController id="sp8-Yw-atn" customClass="BBContentVC">
+            <connections>
+                <outlet property="view" destination="RiF-IL-e4v" id="gru-LZ-CMm"/>
             </connections>
         </viewController>
     </objects>

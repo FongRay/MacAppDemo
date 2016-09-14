@@ -7,7 +7,10 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BBUserInfoDelegate.h"
 
 @interface BBUserInfoView : NSView
+
+@property (readwrite, weak) id<BBUserInfoDelegate> delegate;
 
 @end

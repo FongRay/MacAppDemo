@@ -1,25 +1,28 @@
 //
-//  BBImageButton.m
+//  BBTextButton.m
 //  ugc_assist
 //
 //  Created by Ray Fong on 16/9/8.
 //  Copyright © 2016年 bilibili. All rights reserved.
 //
 
-#import "BBImageButton.h"
+#import "BBTextButton.h"
 
-@interface BBImageButton ()
+@interface BBTextButton ()
 
-@property (nonatomic, strong) NSImage *normalImage;
+@property (nonatomic, strong) NSColor *normalColor;
 
-@property (nonatomic, strong) NSImage *hoverImage;
+@property (nonatomic, strong) NSColor *hoverColor;
 
 @property (nonatomic, strong) NSTrackingArea *trackingArea;
 
+- (void)setTextColor:(NSColor *)color;
+
 @end
 
-@implementation BBImageButton
+@implementation BBTextButton
 
+@synthesize fontSize = _fontSize;
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
@@ -30,9 +33,10 @@
 - (instancetype)initWithFrame:(NSRect)frameRect {
     self = [super initWithFrame:frameRect];
     [self setButtonType:NSMomentaryChangeButton];
-    [self setBezelStyle:NSRoundedDisclosureBezelStyle];
+    [self setAlignment:NSTextAlignmentLeft];
     [self setBordered:NO];
-    [self setImagePosition:NSImageOnly];
+    [self setImage:nil];
+    _fontSize = 12;
     return self;
 }
 
@@ -54,7 +58,7 @@
 }
 
 - (void)setMouseEntered {
-    self.image = _hoverImage;
+    [self setTextColor:_hoverColor];
 }
 
 - (void)mouseExited:(NSEvent *)theEvent {
@@ -63,14 +67,25 @@
 }
 
 - (void)setMouseExited {
-    self.image = _normalImage;
+    [self setTextColor:_normalColor];
 }
 
-- (void)setImage:(NSString *)normal withHover:(NSString *)hover {
-    _normalImage = [NSImage imageNamed:normal];
-    _hoverImage = [NSImage imageNamed:hover];
-    self.image = _normalImage;
-    self.alternateImage = _hoverImage;
+- (void)setTitle:(NSString *)title
+ withNormalColor:(NSColor *)normal
+      hoverColor:(NSColor *)hover {
+    [super setTitle:title];
+    _normalColor = normal;
+    _hoverColor = hover;
+    [self setTextColor:normal];
+}
+
+- (void)setTextColor:(NSColor *)color {
+    NSMutableAttributedString *textAttr = [[NSMutableAttributedString alloc] initWithAttributedString:[self attributedTitle]];
+    NSRange titleRange = NSMakeRange(0, [self.title length]);
+    [textAttr addAttribute:NSForegroundColorAttributeName value:color range:titleRange];
+    NSDictionary * attributes = [NSDictionary dictionaryWithObject:[NSFont systemFontOfSize:_fontSize] forKey:NSFontAttributeName];
+    [textAttr addAttributes:attributes range:titleRange];
+    [self setAttributedTitle:textAttr];
 }
 
 @end

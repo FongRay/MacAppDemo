@@ -1,5 +1,5 @@
 //
-//  BBTextButton.h
+//  BBImageButton.h
 //  ugc_assist
 //
 //  Created by Ray Fong on 16/9/8.
@@ -8,7 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface BBTextButton : NSButton
+@interface BBImageButton : NSButton
+
+- (void)setImage:(NSString *)normal
+       withHover:(NSString *)hover;
+
+- (void)setImage:(NSString *)normal
+       withHover:(NSString *)hover
+    withDisabled:(NSString *)disabled;
 
 - (void)setTitle:(NSString *)title
        withNormalColor:(NSColor *)normal

@@ -7,11 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "BBUserInfoDelegate.h"
 
-@interface BBUserInfoVC : NSViewController
+@interface BBUserInfoVC : NSViewController <BBUserInfoDelegate>
 
 @property (nonatomic) NSSize superViewSize;
 
-- (void) test;
+- (BOOL)IsLoggedIn;
 
 @end

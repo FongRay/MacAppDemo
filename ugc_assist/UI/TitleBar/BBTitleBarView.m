@@ -32,7 +32,6 @@
     [path lineToPoint:NSMakePoint(0, rect.size.height)];
     [path lineToPoint:NSMakePoint(0, 15)];
         
-    
     [[NSColor colorWithRGBInt:0xff709f] set];
     [path fill];
     
